@@ -3,7 +3,7 @@ const url = window.location.href;
 let baseUrl = "";
 
 if (url.split(":")[0] === 'https') {
-    // baseUrl = 'https://ill-pink-gorilla-cuff.cyclic.app';
+    baseUrl = 'https://worrisome-erin-eagle.cyclic.app/';
 } else {
     baseUrl = 'http://localhost:5001';
 }
@@ -67,7 +67,7 @@ let getAllProducts = () => {
                         <p>Category :${eachProduct.category} </p>
                         <p>Description :${eachProduct.description} </p>
                         <button id="button2" onclick="deleteProduct('${eachProduct._id}')">delete </button>
-                            
+
                         
                     </div>
                        `
