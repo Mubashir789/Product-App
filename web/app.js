@@ -3,7 +3,7 @@ const url = window.location.href;
 let baseUrl = "";
 
 if (url.split(":")[0] === 'https') {
-    baseUrl = 'https://worrisome-erin-eagle.cyclic.app/';
+    baseUrl = 'https://product-app.cyclic.app/';
 } else {
     baseUrl = 'http://localhost:5001';
 }
