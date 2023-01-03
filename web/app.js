@@ -37,6 +37,7 @@ let addProduct = () => {
             //     response.data.message
 
             getAllProducts();
+            // getAllProducts();
 
 
         })
@@ -49,7 +50,13 @@ let addProduct = () => {
 
 }
 let getAllProducts = () => {
-    axios.get(`${baseUrl}/products`)
+    axios.get(`${baseUrl}/products`,{
+        Headers : {
+            'Cache-Control':'no-cache',
+            'Pragma':'no-cache',
+            'Expires':'0',
+        },
+    })
         .then(function (response) {
             // handle success
             console.log("response is success");
